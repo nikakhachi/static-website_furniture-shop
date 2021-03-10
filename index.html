@@ -37,13 +37,37 @@
         <li>მყიდველებს <i class="fa fa-arrow-down" aria-hidden="true"></i></li>
     </ul>
     <div id='slider'>
-        <img id='kitchen-photo' alt='kitchen designs' src='./assets/kitchen.jpg'>
+        <div class='slidershow'>
+            <div class="slides">
+                <input type='radio' name='r' id='r1' checked/>
+                <input type='radio' name='r' id='r2' />
+                <input type='radio' name='r' id='r3' />
+                <input type='radio' name='r' id='r4' />
+                <div class="slide s1">
+                    <img id='kitchen-photo' alt='kitchen designs' src='./assets/slider-1.jpg'>
+                </div>
+                <div class="slide">
+                    <img id='kitchen-photo' alt='kitchen designs' src='./assets/slider-2.jpg'>
+                </div>
+                <div class="slide">
+                    <img id='kitchen-photo' alt='kitchen designs' src='./assets/slider-3.jpeg'>
+                </div>
+                <div class="slide">
+                    <img id='kitchen-photo' alt='kitchen designs' src='./assets/slider-4.jpeg'>
+                </div> 
+            </div>
+        </div>
+        <div id='slider-btns'>
+            <label for='r1' class='slider-btn'></label>
+            <label for='r2' class='slider-btn'></label>
+            <label for='r3' class='slider-btn'></label>
+            <label for='r4' class='slider-btn'></label>
+        </div>
         <div id='window'>
             <p id='window-text'>შეუკვეთეთ თქვენი ოცნების სამზარეულო</p>
             <button id='meeting-btn'>დანიშნეთ შეხვედრა</button>
             <button id='catalog-btn'>კატალოგი</button>
         </div>
-        <div id='slider-btns'><span class='slider-btn'></span><span class='slider-btn'></span><span class='slider-btn'></span><span class='slider-btn'></span></div>
     </div>
     <div id='container'>
         <h2>სამზარეულოს კატალოგი</h2>

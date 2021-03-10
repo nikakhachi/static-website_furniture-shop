@@ -90,9 +90,55 @@ ul li {
 
 /* XXXXXXXXXXXXXXX */
 
-#kitchen-photo {
+/* SLIDESHOW */
+.slidershow {
   width: 100%;
+  height: 28vw;
+  overflow: hidden;
 }
+#slider-btns {
+  display: flex;
+  justify-content: center;
+}
+.slider-btn {
+  padding: 0.21% 1%;
+  background-color: #00b15ea6;
+  transition: 0.4s;
+  margin-right: 1%;
+  margin-top: 1.5%;
+  cursor: pointer;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.slide {
+  width: 25%;
+  transition: 0.6s;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+#r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+#r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+#r4:checked ~ .s1 {
+  margin-left: -75%;
+}
+/* SLIDESHOW */
 
 #slider {
   position: relative;
@@ -130,25 +176,11 @@ ul li {
   border: 1px solid #00b15d;
 }
 
-#slider-btns {
-  text-align: center;
-}
-
-.slider-btn {
-  border-bottom: 4px solid #00b15e9c;
-  width: 1.7%;
-  display: inline-block;
-  margin: 1.7% 0.4% 0 0;
-}
-.slider-btn:first-child {
-  border-bottom: 6px solid #00b15d;
-}
-
 /* XXXXXXXXXXXXXXX */
 
 #container {
   text-align: center;
-  margin-top: 4%;
+  margin-top: 3.5%;
 }
 
 #container h2 {
