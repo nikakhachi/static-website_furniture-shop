@@ -24,7 +24,6 @@ html {
 header {
   margin: auto;
   font-family: "Glaho Caps", sans-serif;
-  margin-right: -7%;
 }
 
 #logo {
@@ -41,6 +40,7 @@ ul {
   margin: auto;
   justify-content: right;
   font-size: 1vw;
+  margin-right: 11.7%;
 }
 
 #header1 {
@@ -64,7 +64,7 @@ ul li {
 
 #lang {
   position: absolute;
-  left: 8.2%;
+  left: 2%;
 }
 
 #header2-div {
@@ -73,7 +73,7 @@ ul li {
 }
 
 #shopping-bag {
-  margin-left: 8%;
+  margin-left: 8.9%;
 }
 
 #menu {
@@ -107,6 +107,7 @@ ul li {
   width: 25%;
   text-align: center;
   box-shadow: -20px 20px #00b15d;
+  animation: fadeIn 1s ease-out;
 }
 #window-text {
   font-size: 1.5vw;
@@ -374,6 +375,7 @@ footer ul p {
   font-family: "Glaho Caps", sans-serif;
   font-size: 1.3vw;
   margin-bottom: 4%;
+  margin-top: 7%;
 }
 
 .footer-item:first-child {
@@ -416,4 +418,17 @@ footer ul p {
 
 footer .fa-paper-plane {
   color: #00b15d;
+}
+
+button {
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
